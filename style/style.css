@@ -1,0 +1,192 @@
+body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    background-image: url('https://i.pinimg.com/originals/f5/f2/74/f5f27448c036af645c27467c789ad759.gif');
+    background-size: cover;
+}
+
+body.page2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    background-image: url('https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-2.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.page3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    background-image: url('https://i.redd.it/uwwte8wps4h91.gif');
+    background-size: cover;
+}
+
+body.page4 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    background-image: url('https://i.pinimg.com/originals/4e/de/5a/4ede5a33c5490195b2b17466ad26d124.gif');
+    background-size: cover;
+}
+
+#explosionButton {
+    position: center;
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(325, 69%,56%, 1) 100%);
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    animation: colorChange 2s infinite; /* Add animation to change color */
+}
+
+#explosionButton2 {
+    position: center;
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(325, 69%,56%, 1) 100%);
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    animation: colorChange 2s infinite; /* Add animation to change color */
+}
+
+#explosionButton3 {
+    position: center;
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(325, 69%,56%, 1) 100%);
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    animation: colorChange 2s infinite; /* Add animation to change color */
+}
+
+#explosionButton4 {
+    position: center;
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(325, 69%,56%, 1) 100%);
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    animation: colorChange 2s infinite; /* Add animation to change color */
+}
+
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(325, 69%,56%, 1) 100%);
+    }
+    50% {
+        background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(225, 69%,56%, 1) 100%);
+    }
+    100% {
+        background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(125, 69%,56%, 1) 100%);
+    }
+}
+
+#explosionButton:hover {
+    animation: glowing 2s infinite; 
+}
+#explosionButton2:hover {
+    animation: glowing 2s infinite; 
+}
+#explosionButton3:hover {
+    animation: glowing 2s infinite; 
+}
+#explosionButton4:hover {
+    animation: glowing 2s infinite; 
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+    }
+}
+
+.particle {
+    margin: 0 auto;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, hsla(57, 98%, 50%,1) 0%, hsla(325, 69%,56%, 1) 100%);
+    z-index: 0;
+    animation: explosionAnimation 1.5s ease-out forwards;
+}
+
+@keyframes explosionAnimation {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 10;
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        width: 50px;
+        height: 50px;
+        opacity: 20;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        width: 100px; /* Expand width to create the explosion effect */
+        height: 100px; /* Expand height to create the explosion effect */
+        opacity: 0; /* Make the particles disappear */
+        transform: translate(-50%, -50%) scale(10); /* Scale the particles */
+    }
+}
+
